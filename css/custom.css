@@ -35,8 +35,11 @@ body {
   background-color:#d763ff;
 }
 .container{
-	max-width: 1180px;
+  max-width: 1300px;
 }  
+.video_cover {
+  height: 240px;
+}
 p, h1, h2, h3, h4, h5, h6{
   margin-bottom:0px;
 }
@@ -171,15 +174,14 @@ h6 {
   display: inline-flex;
   white-space: nowrap;
   color: #fff;
-  background: transparent;
+  background: #e8a41d;
   border-radius: 30px;
   text-transform: capitalize;
   font-size: 13px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   padding: 9px 40px;
-  letter-spacing: .1em;
-  border: 1px solid #fff;
+  border: 1px solid #e8a41d;
 }
 button.magnet-button {
   width: 178px;
@@ -188,8 +190,8 @@ button.magnet-button {
   align-items: center;
 }
 .magnet-button:hover{
-  border-color: #151515;
-  color:#151515;
+  border-color: #e8a41d;
+  color:#e8a41d;
   background:transparent;
 }
 .fixed-top{
@@ -273,7 +275,7 @@ button.magnet-button {
     line-height: 120%;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: Source Sans Pro!important;
+    font-family: "Inter", sans-serif;
     margin-bottom: 30px;
 }
 .bg_heading h5{
@@ -297,8 +299,8 @@ h4.number {
 h4 {
   font-size: 60px;
   line-height: 70px;
-  font-family: 'Source Serif Pro', serif;
   font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
 section.section_project a {
   font-size: 55px;
@@ -550,26 +552,45 @@ label.btn.btn-default:focus {
 ::-webkit-input-placeholder { /* Edge */
  font-family: "Inter", sans-serif;
   text-transform: capitalize;
-  color: #ccc;
-  font-size: 30px;
-  font-weight: 500;
+  color: #000 !important;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
  font-family: "Inter", sans-serif;
   text-transform: capitalize;
-  color: #ccc;
+  color: #000 !important;
   text-transform: initial;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
 }
-
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .4375rem .875rem;
+  font-size: .8125rem;
+  line-height: 1.5385;
+  color: #333;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ddd;
+  border-radius: .1875rem;
+  box-shadow: 0 0 0 0 transparent;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  background: #F8F5F3 !important;
+  height: 60px;
+  width: 100%;
+}
 ::placeholder {
  font-family: "Inter", sans-serif;
   text-transform: capitalize;
-  color: #ccc;
-  font-size: 30px;
-  font-weight: 500;
+  color: #000 !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+.top_form-wrapper .row {
+  gap: 24px 0px;
 }
 section.work_content h4 {
  font-family: "Inter", sans-serif;
@@ -640,7 +661,7 @@ img.about_slider_img {
   filter: brightness(0.5);
 }
 .top-banner{
-  background-image: url(https://customerstoriespro.liquid-themes.com/wp-content/uploads/2021/07/bg-1@2x1.jpg);
+  background-image: url('https://company.liquid-themes.com/wp-content/uploads/2020/07/banner-company-optimized@2x-scaled-1.jpg');
   height: 100%;
 }
 .top-banner {
@@ -649,15 +670,15 @@ img.about_slider_img {
 height:800px;
 padding-bottom: 100px;
 }
-/* .top-banner:after {
-  background: #e8a41dd4;
+.top-banner:after {
+  background: #00222cba;
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-} */
+}
 .banner-content {
   position: relative;
   z-index: 9;
@@ -674,11 +695,12 @@ padding-bottom: 100px;
 }
 .elementor-icon-box-icon {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   gap: 16px;
   align-items: center;
 font-weight: 600;
+letter-spacing: 1px;
 }
 .banner_row-content h2 {
   color: #fff;
@@ -687,7 +709,7 @@ font-weight: 600;
   text-transform: uppercase;
   line-height: 1em;
 }
-a.btn_white {
+.btn_white {
   background: #fff;
   color: #000 !important;
   font-size: 14px;
@@ -758,7 +780,7 @@ svg.video_arrow {
   width: 210px;
   height: 250px;
 }
-a.btn_white:after {
+.btn_white:after {
   position: absolute;
   left: 0;
   top: 0;
@@ -768,10 +790,10 @@ a.btn_white:after {
   background: #000;
   transition: all .4s ease;
 }
-a.btn_white:hover:after {
+.btn_white:hover:after {
   width: 100%;
 }
-a.btn_white:hover span {
+.btn_white:hover span {
   position: relative;
   z-index: 99;
   color: #fff;
@@ -836,9 +858,10 @@ h5.border-text {
 section.counter .row {
   padding: 45px;
   background-color: #f9f9ff;
-  background-size: contain;
   border-radius: 20px;
-  /* background-image: linear-gradient(180deg, #C8E6F3 0%, #C1C8CF 100%); */
+  box-shadow: 0 24px 52px #0000002e;
+  background-size: contain;
+  margin-top: -28px;
 }
 section.counter .row h5 {
   font-size: 40px;
@@ -855,10 +878,10 @@ section.key_fact.section-spacer {
   padding: 100px 0px;
 }
 .features_item {
-  background-image: url(https://starthubfourteen.liquid-themes.com/wp-content/uploads/2024/09/Solutions-4.jpg);
   background-size: cover;
   border-radius: 12px;
-  height:100%;
+  height: 100%;
+  border: 1px solid #FFFFFF7D;
 }
 .features_item-in {
   -webkit-backdrop-filter: brightness(100%) contrast(100%) saturate(100%) blur(20px) hue-rotate(0deg);
@@ -867,6 +890,7 @@ section.key_fact.section-spacer {
     padding: 20px;
     border-radius: 12px;
     height:100%;
+    transition: all 0.5s ease 0s;
 }
 .features_icon {
   background: #25346f;
@@ -900,9 +924,157 @@ section.key_fact.section-spacer {
   margin-top: 0;
 }
 section.key_fact.section-spacer {
-  background-image: url(https://customerstoriespro.liquid-themes.com/wp-content/uploads/2021/07/map1.png);
+  background-image: url(https://parshwaconsultancy.com/wp-content/uploads/2024/05/Banner_bg-2.svg);
+  background-size: cover;
+  background-color: #25346f;
+}
+img.is_colred {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.sticky img.is_white{
+  opacity:0;
+}
+.sticky img.is_colred{
+  opacity:100%;
 }
 
+.sticky .navbar {
+  background: #fff;
+  border-bottom: 1px solid #e1e1e1 !important;
+  box-shadow: -1px 4px 5px 1px rgba(20, 14, 20, .11);
+}
+.sticky a.navbar-nav-link {
+  color: #000;
+}
+.banner_left-content h2 {
+  font-size: 85px;
+  color: #fff;
+  line-height: 1.1em;
+}
+.top_form-wrapper {
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 30px 50px 50px 50px;
+  background: #fff;
+  border-radius: 12px;
+}
+.top-form-header h3.sub_heading {
+  font-size: 20px;
+  margin: 0 !important;
+}
+.top-form-header h2 {
+  font-size: 30px;
+  line-height: 1.1;
+  text-transform: capitalize;
+  margin-top: 8px;
+}
+.top_form-wrapper form {
+  margin-top: 45px;
+}
+.booking__form-btn button.btn_white {
+  background: #e8a41d !important;
+  border: 0;
+  width: 100%;
+  height: 50px;
+}
+.features_item-in:hover {
+  background: #25346f;
+}
+.features_item-in:hover .features_icon {
+  background: #e8a41d;
+}
+
+.features_item-in:hover h4 {
+  color: #fff;
+}
+.video_item h4 {
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 700;
+  margin-top: 20px;
+}
+section.video .row {
+  gap: 45px 0px;
+}
+button.close {
+  position: absolute;
+  top: 0px;
+  background: #25346f !important;
+  z-index: 999999;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  opacity: 100%;
+}
+.modal-dialog {
+  max-width: 700px;
+  margin: 1.75rem auto;
+}
+.video_cover img {
+  object-fit: cover;
+  border-radius: 24px;
+}
+.video_cover {
+  height: 320px;
+}
+.video_cover img {
+  object-fit: cover;
+  border-radius: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+table.w-100.fee_table {
+  font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: #25346f;
+}
+.fee_table th {
+  padding: 15px 20px;
+}
+.fee_table th {
+  padding: 15px 20px;
+  background: #d3d6e2 !important;
+  color: #000;
+}
+.fee_table td{
+  padding: 15px 20px;
+}
+.fee_table tr:nth-child(odd) {
+  background-color: #d3d6e2;
+  color:#000
+}
+.cta_wrapper {
+  box-shadow: inset 0px 3px 66px 0px rgba(0, 0, 0, 0.15);
+  padding: 45px;
+  border-radius: 45px;
+  background-image: url(https://parshwaconsultancy.com/wp-content/uploads/2024/05/Banner_bg-2.svg);
+  background-size: cover;
+  background-color: #25346f;
+}
+.cta_wrapper h3.text-white.my-3 {
+  font-size: 35px;
+}
+.footer_bottom {
+  padding-top: 30px;
+  padding-bottom:30px;
+  border-top: 1px solid #e1e1e1;
+  margin-top: 30px;
+}
+.footer_bottom p{
+  font-size: 14px;
+  line-height: 130%;
+}
+.footer img {
+  margin: 0 auto;
+  width: 150px;
+}
 /*=================================== media query css ===================================*/
 
 
