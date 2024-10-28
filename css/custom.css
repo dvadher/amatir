@@ -661,7 +661,7 @@ img.about_slider_img {
   filter: brightness(0.5);
 }
 .top-banner{
-  background-image: url('https://company.liquid-themes.com/wp-content/uploads/2020/07/banner-company-optimized@2x-scaled-1.jpg');
+  background-image: url('../images/bg3.png');
   height: 100%;
 }
 .top-banner {
@@ -894,12 +894,12 @@ section.key_fact.section-spacer {
 }
 .features_icon {
   background: #25346f;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 24px;
 }
 .features_item h4 {
   font-size: 24px;
@@ -912,6 +912,7 @@ section.key_fact.section-spacer {
   display: flex;
   gap: 15px;
   align-items: center;
+  flex-direction: column;
 }
 .features_icon svg {
   width: 20px;
@@ -1073,8 +1074,51 @@ table.w-100.fee_table {
 }
 .footer img {
   margin: 0 auto;
-  width: 150px;
+  width: 250px;
 }
+.footer li {
+  list-style: none;
+}
+.footer li a{
+  color:#000;
+  padding:0 !important;
+}
+.footer ul {
+  padding: 0 !important;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer_copyright {
+  background: #25346f;
+  font-size: 12px;
+  text-align: center;
+  padding: 15px 0px;
+}
+.contact_flex-content {
+  gap: 16px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 24px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 7fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+  align-items: center;
+}
+.contact_flex-content i {
+  background: #25346f;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #fff;
+}
+.contact_flex-content p {
+  font-size: 14px;
+}
+
 /*=================================== media query css ===================================*/
 
 
