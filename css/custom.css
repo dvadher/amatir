@@ -163,7 +163,7 @@ h6 {
   cursor: pointer;
   outline: 0;
   transition: all ease-in-out .15s;
-  color: #fff;
+  color: #000;
   font-weight: 400;
   text-transform: uppercase !important;
   padding: 0 20px !important;
@@ -661,7 +661,7 @@ img.about_slider_img {
   filter: brightness(0.5);
 }
 .top-banner{
-  background-image: url('../images/bg3.png');
+  background-image: url('../images/banner.png');
   height: 100%;
 }
 .top-banner {
@@ -929,15 +929,12 @@ section.key_fact.section-spacer {
   background-size: cover;
   background-color: #25346f;
 }
-img.is_colred {
+/* img.is_colred {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0;
-}
-.sticky img.is_white{
-  opacity:0;
-}
+  opacity: 100%;
+} */
 .sticky img.is_colred{
   opacity:100%;
 }
@@ -1017,18 +1014,25 @@ button.close {
 }
 .video_cover img {
   object-fit: cover;
-  border-radius: 24px;
+  border-radius: 12px;
 }
 .video_cover {
   height: 320px;
 }
-.video_cover img {
+.is_play {
   object-fit: cover;
   border-radius: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
 }
 table.w-100.fee_table {
   font-size: 14px;
@@ -1130,7 +1134,31 @@ table.w-100.fee_table {
   object-fit: cover;
   border-radius: 12px;
 }
+.page-content {
+  padding-top: 98px;
+}
 
+.result_im-wrapper img {
+  border-radius: 24px;
+  object-fit: cover;
+}
+section.add-section.result h3 {
+  font-size: 32px;
+}
+.video_item {
+  position: relative;
+  margin: 5px;
+}
+.video_item h4 {
+  background: #25346ff7;
+  font-size: 16px;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
 
 
 /*=================================== media query css ===================================*/
