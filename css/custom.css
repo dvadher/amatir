@@ -38,7 +38,7 @@ body {
   max-width: 1300px;
 }  
 .video_cover {
-  height: 240px;
+  height: 299px !important;
 }
 p, h1, h2, h3, h4, h5, h6{
   margin-bottom:0px;
@@ -1158,6 +1158,7 @@ section.add-section.result h3 {
   color: #fff;
   border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    opacity: 0;
 }
 
 
