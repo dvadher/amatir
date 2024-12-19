@@ -1160,8 +1160,25 @@ section.add-section.result h3 {
     border-bottom-right-radius: 12px;
     opacity: 0;
 }
-
-
+.result_wrap img {
+  border-radius: 12px;
+}
+.logo_heading img {
+  width: 100px;
+}
+.logo_heading span {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  color: #0c4b87;
+  line-height: 100%;
+}
+.sub {
+  display: block;
+}
+.logo_heading {
+  display: flex;
+  align-items: center;
+}
 /*=================================== media query css ===================================*/
 
 
